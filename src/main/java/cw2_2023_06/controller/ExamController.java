@@ -13,7 +13,6 @@ public class ExamController {
 
     private final ExaminerService examinerService;
 
-
     public ExamController(ExaminerService examinerService) {
         this.examinerService = examinerService;
     }

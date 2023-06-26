@@ -14,7 +14,6 @@ public class JavaQuestionServiceImpl implements QuestionService {
 
     @Override
     public Question add(String question, String answer) {
-
         return add(new Question(question, answer));
     }
 
@@ -25,6 +24,7 @@ public class JavaQuestionServiceImpl implements QuestionService {
         }
         return question;
     }
+
 
     @Override
     public Question remove(Question question) {

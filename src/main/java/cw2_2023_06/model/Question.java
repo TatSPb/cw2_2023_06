@@ -34,7 +34,7 @@ public class Question {
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return Objects.hash(question, answer);
     }
 
     @Override
