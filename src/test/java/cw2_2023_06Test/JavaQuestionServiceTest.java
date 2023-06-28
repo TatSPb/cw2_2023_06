@@ -39,13 +39,12 @@ public class JavaQuestionServiceTest {
                 .isIn(questionService.getAll());
         Assertions.assertThat(questionService.getAll()).hasSize(beforeCount + 1);
     }
-
     @Test
     public void add2Test() {
         int beforeCount = questionService.getAll().size();
-        Question question = new Question("Q2", "A2");
+        Question question = new Question("Q4", "A4");
 
-        Assertions.assertThat(questionService.add("Q2", "A2"))
+        Assertions.assertThat(questionService.add("Q4", "A4"))
                 .isEqualTo(question)
                 .isIn(questionService.getAll());
         Assertions.assertThat(questionService.getAll()).hasSize(beforeCount + 1);
